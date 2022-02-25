@@ -1,0 +1,11 @@
+Spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    platform: h2
+    url: jdbc:h2:mem:carddb
+
+login:
+  username: admin
+  password: adminn
