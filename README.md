@@ -7,11 +7,11 @@ This service exposes 2 secure endpoint
 * Add card details into database
 * Retrieve all stored card details from table
 
-Adding new card service validate make sure to not store duplicate card which is already into database and before storing the card details it validates the card number using LUHN algorithm.
+Adding new card detail service validates input request and make sure to not store duplicate card details which is already into database. Before storing any card deatils, it validates the card number using LUHN algorithm.
 
 Retrieve card details service just goes and fetches all data from table if any 
 
-Both the services has custom validation and exception handling and make use of basic sprint security authorization. 
+Both the services has custom validation and exception handling and make use of basic spring security authorization. 
 
 Service uses H2 database to hold and retrieve card details.
 
