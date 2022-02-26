@@ -7,7 +7,7 @@ This service exposes 2 secure endpoint
 * Add card details into database
 * Retrieve all stored card details from table
 
-Adding new card detail service validates input request and make sure to not store duplicate card details which is already into database. Before storing any card deatils, it validates the card number using LUHN algorithm.
+Adding New card details service validates input request and make sure to not store duplicate card details which is already into database. Before storing any card deatils, it validates the card number using LUHN algorithm.
 
 Retrieve card details service just goes and fetches all data from table if any 
 
@@ -35,7 +35,7 @@ Service uses H2 database to hold and retrieve card details.
 * Build the project using mvn clean install
 * Run using mvn spring-boot:run
 * The web application is accessible via localhost:8080
-* Use username and password as 'admin' to access service endpoints
+* Use username and password is 'admin' to access service endpoints
 
 ```
 Maven
@@ -95,6 +95,13 @@ H2 databse is accessable through below link
 ```
 http://localhost:8080/h2-console/login.jsp
 ```
+
+## Postman Screen shot
+[
+<img width="872" alt="Screenshot 2022-02-26 at 01 26 45" src="https://user-images.githubusercontent.com/10661364/155823565-2c3991c3-4a2a-4fb7-a048-56f084c3a0f5.png">
+](url)
+
+
 
 ## Authors
 
