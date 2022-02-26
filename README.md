@@ -55,6 +55,12 @@ Docker Image
   docker run -p 8080:8080 sitian/credit-card-service
 
 ```
+### Test Data : Luhn 
+
+* Valid   : 49927398716          
+* Invalid : 49927398717          
+* Invalid : 1234567812345678     
+* Valid   : 1234567812345670     
 
 ### Add Card : POST
 ```
