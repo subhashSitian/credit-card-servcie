@@ -13,17 +13,24 @@ Retrieve card details service just goes and fetches all data from table if any
 
 Both the services has custom validation and exception handling and make use of basic sprint security authorization. 
 
-service uses H2 database to hold and retrieve card details.
+Service uses H2 database to hold and retrieve card details.
+
 
 ## Getting Started
 
 ### Dependencies
 
-* Java 8+
+* Java 8+ / Compiled using java 17
 * Springboot 2.6.3
 * Maven 3
+* JPA/H2
+* Mockito,Junit
+* Spring Basic authentication
+* Lombok
+* java validation
+* DOCKER
 
-### Steps to run
+### Steps to run : Maven and Container(Docker Image)
 
 * Build the project using mvn clean install
 * Run using mvn spring-boot:run
@@ -31,8 +38,22 @@ service uses H2 database to hold and retrieve card details.
 * Use username and password as 'admin' to access service endpoints
 
 ```
+Maven
+
 mvn clean install
 mvn spring-boot:run
+```
+
+
+```
+Docker Image
+
+#Pull image from docker hub
+ docker pull sitian/credit-card-service:latest
+
+# Run Docker Image to Access Service
+  docker run -p 8080:8080 sitian/credit-card-service
+
 ```
 
 ### Add Card : POST
